@@ -21,7 +21,7 @@ public class Main {
         for(int current:arr){
             sum += current;
         }
-        System.out.println("Сумма трат за месяц составила "+sum+" рублей.");
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
         return sum;
 
     }
@@ -31,27 +31,27 @@ public class Main {
         int min = arr[0];
         int max = 0;
         for(int current:arr) {
-            if(current<min) {
+            if(current < min) {
                 min = current;
             }
 
-            if(current>max) {
+            if(current > max) {
                 max = current;
             }
         }
 
-        System.out.println("Минимальная сумма трат за день составила "+min+" рублей. Максимальная сумма трат за день составила "+max+" рублей.");
+        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей.");
     }
 
     public static void task3(){
         double sum = task1();
-        double avarage = sum/30;
-        System.out.println("Средняя сумма трат за месяц составила "+avarage+" рублей.");
+        double average = sum/30;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
     }
 
     public static void task4() {
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for(int i = reverseFullName.length-1; i>=0; i-- ){
+        for(int i = reverseFullName.length - 1; i >= 0; i-- ){
             System.out.print(reverseFullName[i]);
         }
     }
